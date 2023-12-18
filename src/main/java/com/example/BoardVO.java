@@ -1,81 +1,92 @@
 package com.example;
 
-
-import java.sql.Timestamp;
-
+import java.util.Date;
 
 public class BoardVO {
-
     private int seq;
     private String title;
     private String writer;
-    private String content;
-    private Timestamp regdate;
-    private Timestamp  modifydate;
-    private int cnt;
+    private String publish;
+    private String years;
+    private String symbol;
+
     private String category;
+
+    private String location;
+
+    private String loaned;
+    private Date regdate;
+    private int cnt;
+    private String content;
+
+    private String modifydate;
 
     public int getSeq() {
         return seq;
     }
-
     public void setSeq(int seq) {
         this.seq = seq;
     }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
+    public String getTitle() {return title; }
+    public void setTitle(String title){ this.title = title;}
     public String getWriter() {
         return writer;
     }
-
     public void setWriter(String writer) {
         this.writer = writer;
     }
-
-    public String getContent() {
-        return content;
+    public String getPublish() {
+        return publish;
+    }
+    public void setPublish(String publish) {
+        this.publish = publish;
+    }
+    public String getYears() {return years;}
+    public void setYear(String years) {this.years = years;}
+    public String getSymbol() {
+        return symbol;
+    }
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
+    public String getLocation() {
+        return location;
+    }
+    public void setLocation(String location) {
+        this.location = location;
+    }
+    public String getLoaned() {
+        return loaned;
+    }
+    public void setLoaned(String loaned) {
+        this.loaned = loaned;
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public Timestamp getRegdate() {
+    public Date getRegdate() {
         return regdate;
     }
-
-    public void setRegdate(Timestamp regdate) {
+    public void setRegdate(Date regdate) {
         this.regdate = regdate;
     }
-
-    public Timestamp getModifydate() {
-        return modifydate;
-    }
-
-    public void setModifydate(Timestamp modifydate) {
-        this.modifydate = modifydate;
-    }
-
     public int getCnt() {
         return cnt;
     }
-
     public void setCnt(int cnt) {
         this.cnt = cnt;
     }
 
-    public String getCategory() {
-        return category;
+    public String getContent() { return content;
     }
+    public void setContent(String content) { this.content = content;}
 
-    public void setCategory(String category) {
-        this.category = category;
+    public String getModifydate(){ return modifydate;
+    }
+    public void setModifydate(String modifydate){ this.modifydate = modifydate;
     }
 }
